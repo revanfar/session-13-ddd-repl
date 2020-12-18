@@ -1,15 +1,15 @@
 var Person = require('./domain/person/person.logic');
 var PersonAge = require('./domain/personAge/personAge.logic');
 
-var person1 = new Person('Revan', '3451332478230016', '1994-07-25');
-
-if (person1.getWeekType() === 'Weekday' || person1.getWeekType() === 'Weekend') {
-    console.log(`${person1.name} lahir pada tipe minggu ${person1.getWeekType()}`)
+var person = new Person('Revan', '3451332478230016', '1994-07-25');
+console.log(`Function input -> {"Name": "${person.name}", "NIK": "${person.nik}","Date of birth": "${person.dateOfBirth}" `)
+if (person.getWeekType() === 'Weekday' || person.getWeekType() === 'Weekend') {
+    console.log(`${person.name} lahir pada tipe minggu ${person.getWeekType()}`)
     } else {
-    console.log(`Tanggal lahir ${person1.name} bermasalah`)  
+    console.log(`Tanggal lahir ${person.name} bermasalah`)  
     }
 
-console.log(`Saat ini berumur ${person1.getAge()}`)
+console.log(`Saat ini berumur ${person.getAge()}`)
 
-var age1 = new PersonAge('Revan', '3451332478230016', '1994-07-25');
-console.log(`Merupakan seorang ${age1.personByAge()}`)
+var age = new PersonAge('Revan', '3451332478230016', '1994-07-25');
+console.log(`Merupakan seorang ${age.personByAge()}`)

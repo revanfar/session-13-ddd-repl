@@ -1,6 +1,6 @@
 var Person = require('../person/person.logic')
   
-class Age extends Person{
+class PersonAge extends Person{
   constructor(...args) {
     super(...args)
   }
@@ -19,4 +19,4 @@ class Age extends Person{
   
 }
 
-module.exports = Age;
+module.exports = PersonAge;
